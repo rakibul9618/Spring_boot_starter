@@ -1,6 +1,6 @@
-package com.example.demo.repository;
+package com.springboot.starter.repository;
 
-import com.example.demo.entities.User;
+import com.springboot.starter.entities.User;
 import org.springframework.data.repository.CrudRepository;
 
 public interface UserRepository extends CrudRepository<User, Integer> {}

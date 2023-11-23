@@ -1,4 +1,4 @@
-package com.example.demo.entities;
+package com.springboot.starter.entities;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -14,6 +14,14 @@ public class User {
     private String city;
     private String status;
 
+    public User() {
+    }
+
+    public User(String name, String city, String status) {
+        this.name = name;
+        this.city = city;
+        this.status = status;
+    }
 
     public User(int id, String name, String city, String status) {
         this.id = id;
@@ -56,5 +64,4 @@ public class User {
                 ", status='" + status + '\'' +
                 '}';
     }
-
 }
