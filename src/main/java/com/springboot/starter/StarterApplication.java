@@ -35,8 +35,8 @@ public class StarterApplication {
 //        saved.forEach(System.out::println);
 
         /*
-        * Get and update user
-        */
+         * Get and update user
+         */
 
 //        Optional<User> userOptional = userRepo.findById(52);
 //        User user = userOptional.get();
@@ -45,8 +45,8 @@ public class StarterApplication {
 //        System.out.println(updatedUser);
 
         /*
-        * Get all user
-        */
+         * Get all user
+         */
 //        Iterable<User> allUser = userRepo.findAll();
 //        allUser.forEach(System.out::println);
 
@@ -55,6 +55,25 @@ public class StarterApplication {
          */
 //        userRepo.deleteById(2);
 //        System.out.println("Deleted");
-    }
 
+
+//    Custom finder method
+//        List<User> name = userRepo.findByName("Rakib");
+//        System.out.println(name);
+
+//        List<User> userList = userRepo.findByNameStartingWith("R");
+//        System.out.println(userList);
+
+//      Custom  JPQL query
+//        List<User> allUser = userRepo.getAllUser();
+//        allUser.forEach(System.out::println);
+
+//        List<User> name = userRepo.getUserByName("Rakib");
+//        System.out.println(name);
+
+//          Custom Native query
+//        List<User> allUser = userRepo.getUsers();
+//        allUser.forEach(System.out::println);
+
+    }
 }
